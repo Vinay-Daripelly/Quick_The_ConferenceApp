@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bkgsignup"
+    tools:context=".ReSchedulerActivity">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/Card_View"
+        android:layout_width="326dp"
+        android:layout_height="533dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="118dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@mipmap/logo_quick" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Please Enter the valid room code to Reschedule the session!"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Room_Code1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="800dp"
+                android:background="@drawable/textbox_style"
+                android:drawableLeft="@drawable/ic_outline_private_connectivity_24"
+                android:ems="10"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="ROOM CODE"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/Date_View1"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Set Date"
+                android:textColor="@color/amp_gray"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/Date_BTN1"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/signupbtn_style"
+                android:text="Set  Date"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/Time_view1"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Set Time"
+                android:textColor="@color/amp_gray"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/Time_Button1"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="148dp"
+                android:background="@drawable/loginbtn_style"
+                android:text="Set Time"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Submit_Btn1"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/signupbtn_style"
+                android:minHeight="48dp"
+                android:text=" Submit "
+                android:textColor="#FFFFFF"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/SHARE_Btn1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="148dp"
+                android:background="@drawable/loginbtn_style"
+                android:text="SHARE"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bkgsignup"
+    tools:context=".DashboardActivity">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/grA"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="199dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@mipmap/logo_quick" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Please Enter the valid room code to join session!"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/CodeBox"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="800dp"
+                android:background="@drawable/textbox_style"
+                android:drawableLeft="@drawable/ic_outline_private_connectivity_24"
+                android:ems="10"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="ROOM CODE"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/JOINBTN"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/signupbtn_style"
+                android:text="JOIN / CREATE A CONFERENCE"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/ScheduleBtn"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/loginbtn_style"
+                android:minHeight="48dp"
+                android:text=" Schedule Your Meet"
+                android:textColor="#FFFFFF"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+
+            <Button
+                android:id="@+id/ReScheduleBtn"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/signupbtn_style"
+                android:minHeight="48dp"
+                android:text=" ReSchedule Your Meet"
+                android:textColor="#FFFFFF"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/demoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
